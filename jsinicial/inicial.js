@@ -39,17 +39,51 @@ var miVar3=null;
 
 console.log(miVar, miVar2, miVar3);
 
-
+//objeto en javascript, conjunto de propiedades
 var lessonObject={
     order : 1,
     title : "variable",
     date  : '12-07-2021' 
 }
 
+//No es un conjunto ni una lista. (Que es un conjunto o una lista en javascript)
+//Es un array y se pueden repetir los valores.
+//En un conjunto no se pueden repetir valores y en una lista, puede 
+//almacenar valores de distinto tipo.
+//En un array son solo valores y no contienen una clave.
 var lessonArray = ['homero', 'marge', 'lisa']
 
+//accediendo a los valores desde el objeto
 console.log(lessonObject.title);
-console.log(lessonObject.date);
+console.log("como objeto (objeto.propiedad): "+lessonObject.date);
+console.log("como objeto sin punto (objeto['propiedad']): "+lessonObject['date']);
+//acciendo a los valores del arreglo.
 console.log(lessonArray[0]);
 
+var arr = [11,22,33, 'hola,', 'mundo', {name:'Albeto'}, undefined, null];
+//todo el arreglo
+console.log(arr);
+//solo la posicion 5
+console.log(arr[5]);
+
+console.log("undfined por que no existe: "+arr[45]);
+
+// es undefined por que yo lo deje asi o por que js no lo encontro?
+console.log("undfined por que no existe o yo lo setee asi?: "+arr[6]);
+//Normalmente se dejan como null
+
+console.log("Yo deje vacio: "+arr[7]);
+
+var num = 1;
+console.log(num);
+console.log(typeof(num));
+num = 10;
+console.log(num);
+
+console.log("concatenacion: "+ num + num);
+console.log("suma: "+parseInt(num + num));
+
+num ='hola tupo';
+console.log(typeof(num));
+console.log(num);
 
